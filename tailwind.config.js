@@ -6,8 +6,13 @@ export default {
   ],
   theme: {
     extend: {
-      color: {
-        secondary: '#2C2C2C'
+      fontFamily: {
+        outfit: ["Outfit", "sans-serif"] ,
+        JosefinSans: ["Josefin Sans", "sans-serif"]
+
+      },
+      colors: {
+        secondary:'#2C2C2C'
       }
     },
   },
