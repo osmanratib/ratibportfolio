@@ -1,8 +1,10 @@
 import React from 'react';
 import ratibImage from "/Images/ratibimage.png"
 import EmailBar from '../EmailBar/EmailBar';
+import { LuCircleArrowOutUpRight } from "react-icons/lu";
 
 const HeroSection = () => {
+
  return (
   <div>
    <section
@@ -16,15 +18,15 @@ const HeroSection = () => {
    >
     <EmailBar />
 
-    <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20 flex justify-center w-full lg:w-0">
+    <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20 flex justify-center w-full lg:w-[450px] ">
      <img
-      className='h-[400px] lg:h-[500px] w-[600px] lg:w-0'
+      className='h-[400px] lg:h-[600px] w-[320px] lg:w-full'
       src={ratibImage}
       alt="ratibImage"
      />
     </div>
 
-    <div className="content flex justify-center  absolute top-[20%] md:top-[20%] lg:top-[50%] w-full z-10">
+    <div className="content flex justify-center  absolute top-[10%] md:top-[20%] lg:top-[50%] w-full z-10">
      <h1
       // style={{
       //  WebkitTextStroke: "4px white",
@@ -33,6 +35,11 @@ const HeroSection = () => {
      >
       osman ratib
      </h1>
+    </div>
+
+    <div className='lg:hidden md:hidden relative top-[30%] w-[400px] pl-20' >
+     <h1 className='capitalize font-JosefinSans text-[17px] ' >I’m a passionate web developer who thrives on tackling challenging problems and exploring innovative solutions </h1>
+     <button className=' bg-secondary px-8 py-1 text-white rounded-md mt-6 font-JosefinSans flex  items-center gap-2 ' >contact <LuCircleArrowOutUpRight /> </button>
     </div>
 
    </section>
