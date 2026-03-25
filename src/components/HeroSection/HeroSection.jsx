@@ -16,9 +16,9 @@ const HeroSection = () => {
    >
     <EmailBar />
 
-    <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20 flex justify-center">
+    <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20 flex justify-center w-full lg:w-0">
      <img
-      className='h-[400px] lg:h-[600px]'
+      className='h-[400px] lg:h-[500px] w-[600px] lg:w-0'
       src={ratibImage}
       alt="ratibImage"
      />
@@ -29,7 +29,7 @@ const HeroSection = () => {
       // style={{
       //  WebkitTextStroke: "4px white",
       // }}
-      className=' text-[100px] md:text-[200px] lg:text-[200px] leading-[0.8]  text-center font-outfit font-extrabold absolute text-secondary uppercase'
+      className=' text-[100px] md:text-[200px] lg:text-[200px] leading-[1]  text-center font-outfit font-extrabold absolute text-secondary uppercase'
      >
       osman ratib
      </h1>
