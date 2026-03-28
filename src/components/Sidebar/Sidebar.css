@@ -1,0 +1,32 @@
+/* Floating/blowing effect on hover */
+@keyframes float {
+ 0% {
+  transform: translateY(0px) rotate(0deg);
+ }
+
+ 25% {
+  transform: translateY(-3px) rotate(-1deg);
+ }
+
+ 50% {
+  transform: translateY(0px) rotate(0deg);
+ }
+
+ 75% {
+  transform: translateY(3px) rotate(1deg);
+ }
+
+ 100% {
+  transform: translateY(0px) rotate(0deg);
+ }
+}
+
+.float-hover {
+ display: inline-block;
+ /* keep layout */
+ transition: transform 0.3s ease;
+}
+
+.float-hover:hover {
+ animation: float 2s infinite ease-in-out;
+}

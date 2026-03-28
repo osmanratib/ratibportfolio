@@ -3,11 +3,12 @@ import ratibImage from "/Images/ratibimage.png"
 import EmailBar from '../EmailBar/EmailBar';
 import { LuCircleArrowOutUpRight } from "react-icons/lu";
 import { FiArrowRightCircle } from "react-icons/fi";
+import Sidebar from '../Sidebar/Sidebar';
 
 const HeroSection = () => {
 
  return (
-  <div>
+  <div> 
    <section
     style={{
      background: "url('/Images/v996-011.jpg')",
@@ -17,11 +18,12 @@ const HeroSection = () => {
     }}
     className='relative z-20 h-screen'
    >
-    <EmailBar />
+    <EmailBar /> 
+    <Sidebar/>
 
     <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20 flex justify-center w-full lg:w-[450px] ">
      <img
-      className='h-[380px] lg:h-[600px] w-[320px] lg:w-full'
+      className='h-[380px] lg:h-[600px] w-[320px] lg:w-full select-none'
       src={ratibImage}
       alt="ratibImage"
      />
@@ -32,13 +34,13 @@ const HeroSection = () => {
       // style={{
       //  WebkitTextStroke: "4px white",
       // }}
-      className=' text-[100px] md:text-[200px] lg:text-[200px] leading-[1]  text-center font-outfit font-extrabold absolute text-secondary uppercase'
+      className=' text-[100px] md:text-[200px] lg:text-[200px] leading-[1]  text-center font-outfit font-extrabold absolute text-secondary uppercase select-none'
      >
       osman ratib
      </h1>
     </div>
       
-    <div className='relative top-[20%] left-[10%] hidden md:block' >
+    <div className='relative top-[20%] left-[10%] hidden md:block select-none' >
      <h1 className='font-JosefinSans text-[17px] w-[400px] flex gap-3' > <span className='text-[20px]' ><FiArrowRightCircle /> </span>I’m a passionate web developer who thrives on tackling challenging problems and exploring innovative solutions </h1>
    </div>
 
