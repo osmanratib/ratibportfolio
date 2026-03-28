@@ -41,11 +41,11 @@ const HeroSection = () => {
     </div>
       
     <div className='relative top-[20%] left-[10%] hidden md:block select-none' >
-     <h1 className='font-JosefinSans text-[17px] w-[400px] flex gap-3' > <span className='text-[20px]' ><FiArrowRightCircle /> </span>I’m a passionate web developer who thrives on tackling challenging problems and exploring innovative solutions </h1>
+     <h1 className='font-JosefinSans text-[17px] w-[400px] flex gap-3 text-black' > <span className='text-[20px]' ><FiArrowRightCircle /> </span>I’m a passionate web developer who thrives on tackling challenging problems and exploring innovative solutions </h1>
    </div>
 
     <div className='lg:hidden md:hidden relative top-[30%] w-[400px] pl-20' >
-     <h1 className='capitalize font-JosefinSans text-[17px] ' >I’m a passionate web developer who thrives on tackling challenging problems and exploring innovative solutions </h1>
+     <h1 className='capitalize font-JosefinSans text-[17px] text-black ' >I’m a passionate web developer who thrives on tackling challenging problems and exploring innovative solutions </h1>
      <button className=' bg-secondary px-8 py-1 text-white rounded-md mt-6 font-JosefinSans flex  items-center gap-2 ' >contact <LuCircleArrowOutUpRight /> </button>
     </div>
 
